@@ -117,7 +117,8 @@ cc_test {
     enabled: false,
     arch: {
         arm64: {
-            enabled: true,
+            // the trusty virtual machine test dependencies are not built on the gsi
+            enabled: false,
         },
     },
 }
